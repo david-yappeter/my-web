@@ -1,0 +1,30 @@
+import { QUERY_POSTS_GET_ALL, POST_GET_BY_ID } from "./query/Post";
+import {
+  REGISTER_USER,
+  LOGIN_USER,
+  CHANGE_PASSWORD_USER,
+} from "./mutation/Auth";
+import { USER_ME } from "./query/Me";
+import {
+  CREATE_POST,
+  DELETE_POST,
+  POST_LIKE,
+  POST_COMMEND_CREATE,
+  POST_COMMEND_DELETE,
+} from "./mutation/Post";
+import { USER_EDIT_PROFILE_PICTURE } from "./mutation/User";
+
+export {
+  DELETE_POST,
+  QUERY_POSTS_GET_ALL,
+  REGISTER_USER,
+  LOGIN_USER,
+  USER_ME,
+  POST_LIKE,
+  USER_EDIT_PROFILE_PICTURE,
+  CREATE_POST,
+  POST_GET_BY_ID,
+  POST_COMMEND_CREATE,
+  POST_COMMEND_DELETE,
+  CHANGE_PASSWORD_USER,
+};
