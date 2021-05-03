@@ -90,7 +90,7 @@ const MainPage = () => {
   return (
     <div style={{}}>
       <Header />
-      <VerticalTab value={area} handleAreaClick={handleAreaClick} />
+      {/* <VerticalTab value={area} handleAreaClick={handleAreaClick} /> */}
       <Welcome
         open={open.welcome}
         open2={open.welcome2}

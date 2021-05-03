@@ -8,6 +8,7 @@ const Footer = () => {
         display: "block",
         width: "100%",
         height: "300px",
+        textAlign: "center"
       }}>
       <hr />
       {`© ${year} davidyappeter.xyz`}
