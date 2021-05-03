@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: local("SairaSemiCondensed"),
+    url(./fonts/SairaSemiCondensed-Regular.ttf) format("truetype");
+}

@@ -1,0 +1,16 @@
+.my-name-enter {
+  opacity: 0;
+  transform: translateY(300%);
+}
+.my-name-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1.25s;
+}
+.my-name-exit {
+  opacity: 1;
+}
+.my-name-exit-active {
+  opacity: 0;
+  /* transition: all 1s; */
+}
