@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Vs Code
 /.vscode
+
+.env*
