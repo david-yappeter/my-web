@@ -12,7 +12,7 @@ import {
   Popup,
   Search,
 } from "semantic-ui-react";
-import { useToken } from "../utils/hooks";
+import { useToken, useWindow } from "../utils/hooks";
 import { UserSearchReducer } from "../utils/reducer";
 import { REMOVE_MEMBER, TEAM_BY_ID } from "./graphql/index";
 import HeaderComponent from "./HeaderComponent";
@@ -24,6 +24,7 @@ import UserSearch from "./UserSearch";
 const Members = (props, selectSection) => {
   const { teamID } = props.match.params;
   const [cookies] = useCookies();
+  const windowWidth = useWindow();
   const [modalOpen, setModalOpen] = useState(false);
   const { value: state } = UserSearchReducer();
   const { user: meUser, loading: userLoading, called: userCalled } = useToken();
@@ -105,7 +106,10 @@ const Members = (props, selectSection) => {
 
   const BoardsSection = ({ boards }) => {
     return (
-      <Grid container columns={4} style={{ margin: "0" }}>
+      <Grid
+        container
+        columns={windowWidth >= 992 ? 4 : windowWidth >= 600 ? 3 : 2}
+        style={{ margin: "0" }}>
         {boards.map((board, index) => (
           <Grid.Column
             key={`board_section_grid_id_${index}`}

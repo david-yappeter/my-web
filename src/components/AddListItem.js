@@ -104,6 +104,7 @@ const AddListItem = ({ list, teamID }) => {
               onSubmit={onSubmit}
               value={inputVariables.name}
               disabled={loading}
+              required
             />
             <button
               type="submit"
