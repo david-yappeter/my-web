@@ -6,6 +6,7 @@ import { Button, Typography } from "@material-ui/core";
 import { CSSTransition } from "react-transition-group";
 import { PlaceHolder } from "./index";
 import { useWindowSize } from "../../MainPage/MainPage";
+import WebPreview from "../../WebPreview";
 
 const Welcome = (props) => {
   const { open, open2, handleChange } = props;
@@ -94,7 +95,10 @@ const Welcome = (props) => {
         style={{ textAlign: "center" }}
       >
         <div>
-          <Welcome2 />
+          <div>
+            <Welcome2 />
+          </div>
+          <WebPreview />
         </div>
       </CSSTransition>
     </Fragment>
