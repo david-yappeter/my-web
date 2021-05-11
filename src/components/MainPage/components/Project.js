@@ -55,7 +55,8 @@ const Project = (props) => {
                 justifyContent: "center",
               }}
               item
-              xs={mobileView <= 1050 ? 12 : 6}
+              xs={mobileView[0] <= 1050 ? 12 : 6}
+              // xs={12}
               key={`grid_item_project_index_${index}`}>
               <WebPreview {...project} />
             </Grid>
