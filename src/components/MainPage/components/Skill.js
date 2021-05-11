@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { useWindowSize } from "./../MainPage";
+import { useWindowSize } from "../MainPage";
 import { Divider, Grid, Typography } from "@material-ui/core";
 import { CSSTransition } from "react-transition-group";
 import Rating from "@material-ui/lab/Rating";
@@ -18,7 +18,7 @@ import {
   cssImage,
   nodejsImage,
   jsImage,
-} from "./../../../images/index";
+} from "../../../images/index";
 
 const useStyles = makeStyles(() => ({
   root: {

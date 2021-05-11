@@ -3,16 +3,19 @@ import React from "react";
 const Footer = () => {
   const year = new Date().getUTCFullYear();
   return (
+    <>
+    <hr />
     <div
       style={{
-        display: "block",
+        display: "flex",
         width: "100%",
-        height: "300px",
-        textAlign: "center"
+        height: "100px",
+        alignItems:"center",
+        justifyContent: "center",
       }}>
-      <hr />
       {`© ${year} davidyappeter.xyz`}
     </div>
+    </>
   );
 };
 

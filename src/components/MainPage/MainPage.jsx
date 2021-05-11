@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
-import { Header, Footer, VerticalTab } from "./../Layout/index";
+import { Header } from "./../Layout/index";
 
 import "./MainPage.css";
 
@@ -8,6 +8,7 @@ import {
   Welcome,
   Skill,
   Experience,
+  Project,
   Contact,
 } from "./components/index";
 
@@ -34,13 +35,14 @@ const MainPage = () => {
     skill: false,
     career: false,
     contact: false,
+    project: false,
   });
   const [area, setArea] = useState();
   const fadeIn = [
     { name: "profile", offset: "900" },
     { name: "career", offset: "1600" },
     { name: "skill", offset: "2400" },
-    { name: "contact", offset: "3100" },
+    {name: "contact", offset: "3100"},
   ];
   const divided = [0, 900, 1600, 2400, 3100];
 
@@ -100,8 +102,6 @@ const MainPage = () => {
       <Experience open={open.career} />
       <Skill open={open.skill} />
       <Contact open={open.contact} />
-
-      <Footer />
     </div>
   );
 };

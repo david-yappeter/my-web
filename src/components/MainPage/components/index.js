@@ -3,6 +3,7 @@ import Experience from "./Experience";
 import Profile from "./Profile";
 import Skill from "./Skill";
 import Welcome from "./Welcome";
+import Project from "./Project";
 
 const PlaceHolder = (props) => {
   const { open, comp } = props;
@@ -13,4 +14,4 @@ const PlaceHolder = (props) => {
   );
 };
 
-export { Contact, Experience, Profile, Skill, Welcome, PlaceHolder };
+export { Contact, Experience, Profile, Skill, Project, Welcome, PlaceHolder };

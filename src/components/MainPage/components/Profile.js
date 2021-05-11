@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { useWindowSize } from "./../MainPage";
+import { useWindowSize } from "../MainPage";
 import { Grid, Typography } from "@material-ui/core";
 import { CSSTransition } from "react-transition-group";
 import { PlaceHolder } from "./index";
 
-import { myImage } from "./../../../images/index";
+import { myImage } from "../../../images/index";
 
 const useStyles = makeStyles(() => ({
   root: {

@@ -5,8 +5,7 @@ import { Link as LinkScroll } from "react-scroll";
 import { Button, Typography } from "@material-ui/core";
 import { CSSTransition } from "react-transition-group";
 import { PlaceHolder } from "./index";
-import { useWindowSize } from "../../MainPage/MainPage";
-import WebPreview from "../../WebPreview";
+import { useWindowSize } from "../MainPage";
 
 const Welcome = (props) => {
   const { open, open2, handleChange } = props;
@@ -20,8 +19,7 @@ const Welcome = (props) => {
         textAlign: "center",
         fontFamily: "inherit",
         fontSize: isMobile ? "26px" : null,
-      }}
-    >
+      }}>
       Welcome To My Simple Website
     </Typography>
   );
@@ -34,8 +32,7 @@ const Welcome = (props) => {
           padding: isMobile ? null : "0 20vw 0",
           fontFamily: "inherit",
           fontSize: isMobile ? "20px" : null,
-        }}
-      >
+        }}>
         I don't have much to fill right now, but as time goes by I will be
         adding more things to this site But Let's get started by my profile
       </Typography>
@@ -46,22 +43,19 @@ const Welcome = (props) => {
           backgroundColor: "#000000",
           color: "#ffffff",
           textTransform: "initial",
-        }}
-      >
+        }}>
         <LinkScroll
           activeClass="active"
           to="profile"
           spy={true}
           smooth={true}
           offset={-20}
-          duration={600}
-        >
+          duration={600}>
           <Typography
             variant="h5"
             style={{
               fontFamily: "inherit",
-            }}
-          >
+            }}>
             My Profile
           </Typography>
         </LinkScroll>
@@ -80,8 +74,7 @@ const Welcome = (props) => {
         onEntered={() => {
           handleChange("welcome2");
         }}
-        style={{ marginBottom: "30px" }}
-      >
+        style={{ marginBottom: "30px" }}>
         <div>
           <Welcome1 />
         </div>
@@ -92,13 +85,11 @@ const Welcome = (props) => {
         timeout={2500}
         classNames="my-name"
         unmountOnExit
-        style={{ textAlign: "center" }}
-      >
+        style={{ textAlign: "center" }}>
         <div>
           <div>
             <Welcome2 />
           </div>
-          <WebPreview />
         </div>
       </CSSTransition>
     </Fragment>

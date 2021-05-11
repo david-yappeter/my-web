@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { useWindowSize } from "./../MainPage";
+import { useWindowSize } from "../MainPage";
 import { PlaceHolder } from "./index";
 import { CSSTransition } from "react-transition-group";
 import { Typography, Grid } from "@material-ui/core";
@@ -12,7 +12,7 @@ import MailIcon from "@material-ui/icons/Mail";
 const useStyles = makeStyles(() => ({
   root: {
     // backgroundColor: "#F3EFE0",
-    padding: "200px 0 0",
+    padding: "200px 0",
   },
   iconLink: {
     textDecoration: "none",
