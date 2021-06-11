@@ -1,20 +1,18 @@
 import React from "react";
-import "./App.css";
-
-//Font
-import "./fonts/SairaSemiCondensed-Regular.ttf";
-
-import MainPage from "./components/MainPage/MainPage";
-import { Project } from "./components/MainPage/components";
-import { Footer } from "./components/Layout";
+import Home from "./Components/Pages/Home";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./Components/Layout/Header";
+import Profile from "./Components/Pages/Profile";
 
 const App = () => {
   return (
-    <div style={{ fontFamily: "'Saira Semi Condensed'" }}>
-      <MainPage />
-      <Project />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Switch>
+        <Route exact path="/" children={<Home />} />
+        <Route exact path="/profile" children={<Profile />} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 
