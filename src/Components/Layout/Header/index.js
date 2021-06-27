@@ -66,10 +66,10 @@ const Header = () => {
       name: "Home",
       path: "/",
     },
-    {
-      name: "Profile",
-      path: "/profile",
-    },
+    // {
+    //   name: "Profile",
+    //   path: "/profile",
+    // },
     // {
     //   name: "Contact",
     //   path: "/contact",
